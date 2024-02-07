@@ -184,6 +184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myCam: {fileID: 285008211788016320}
   rb: {fileID: 0}
+  projectile: {fileID: 2441561975565816775, guid: a46d25c92b1da03429fa2910ac800e60, type: 3}
 --- !u!1 &3762109622312512720
 GameObject:
   m_ObjectHideFlags: 0

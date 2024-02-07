@@ -18,9 +18,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private Rigidbody rb;
 
+    [SerializeField]
+    private GameObject projectile;
+
     // Start is called before the first frame update
     void Start()
     {
+        Cursor.lockState = CursorLockMode.Locked;
         moveSpeed = 5f;
         rb = GetComponent<Rigidbody>();
     }
@@ -52,6 +56,12 @@ public class PlayerController : MonoBehaviour
         myCam.transform.RotateAround(myCam.transform.position, myCam.transform.right, -pitch);
 
         
+        if (Input.GetMouseButtonDown(0))
+        {
+            GameObject proj = Instantiate(projectile, transform.position + transform.forward, transform.rotation);
+            proj.GetComponent<Rigidbody>().AddForce(transform.forward * 9f, ForceMode.Impulse);
+            Destroy(proj, 7f);
+        }
     }
 }
 
