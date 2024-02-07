@@ -45,6 +45,10 @@ public class PlayerController : MonoBehaviour
         {
             rb.AddForce(Vector3.up * 5f, ForceMode.Impulse);
         }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Cursor.lockState = CursorLockMode.None;
+        }
 
         //get rotation from cursor
         yaw += 4f * Input.GetAxis("Mouse X");

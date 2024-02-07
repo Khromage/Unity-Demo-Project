@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:My project/Assets/Prefabs/Test Enemy.prefab.meta
 guid: 70e0221a741fa094786df17cd6de8f92
+=======
+guid: 115a26500e4d1614fba97bee8fe6bbe9
+>>>>>>> Stashed changes:My project/Assets/Prefabs/Basic Enemy.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 

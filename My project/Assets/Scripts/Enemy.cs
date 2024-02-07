@@ -22,5 +22,14 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(float damageAmount)
     {
         CurrentHealth = CurrentHealth - damageAmount;
+<<<<<<< Updated upstream
+=======
+        HealthImage.fillAmount = CurrentHealth/MaxHealth;
+
+        if(CurrentHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
+>>>>>>> Stashed changes
     }
 }
