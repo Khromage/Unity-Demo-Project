@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     float MaxHealth, CurrentHealth;
+    public AudioSource sfx;
     
     // Start is called before the first frame update
     void Start()
@@ -22,5 +23,6 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(float damageAmount)
     {
         CurrentHealth = CurrentHealth - damageAmount;
+        sfx.Play();
     }
 }
