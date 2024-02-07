@@ -45,10 +45,10 @@ GameObject:
   - component: {fileID: 2282571545967857126}
   - component: {fileID: 7071712875842871403}
   - component: {fileID: 7774912350591025713}
-  - component: {fileID: 8395553483780711290}
+  - component: {fileID: 6207166450897477443}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -170,7 +170,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &8395553483780711290
+--- !u!114 &6207166450897477443
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -179,11 +179,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3539684651481934919}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c48fce931963e7747933798ff4b065c3, type: 3}
+  m_Script: {fileID: 11500000, guid: 72b49e94804d32943a9e308a66d876f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   myCam: {fileID: 285008211788016320}
-  rb: {fileID: 0}
+  rb: {fileID: 7774912350591025713}
   projectile: {fileID: 2441561975565816775, guid: a46d25c92b1da03429fa2910ac800e60, type: 3}
 --- !u!1 &3762109622312512720
 GameObject:
@@ -199,7 +199,7 @@ GameObject:
   - component: {fileID: 5516487037654677485}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
